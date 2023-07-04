@@ -33,8 +33,18 @@ public class CrearCapacitacion extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		String rut = request.getParameter("rut");
+		String dia = request.getParameter("dia");
+		String hora = request.getParameter("hora");
+		String lugar =request.getParameter("lugar");
+		String cantidad = request.getParameter("cantidad");
+		
+		request.setAttribute("rut", rut);
+		request.setAttribute("dia", dia);
+		request.setAttribute("hora", hora);
+		request.setAttribute("lugar", lugar);
+		request.setAttribute("cantidad", cantidad);
+		request.getRequestDispatcher("resumen_capacitacion.jsp").forward(request, response);
 	}
 
 }
