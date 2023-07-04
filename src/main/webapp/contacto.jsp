@@ -5,13 +5,33 @@
 <head>
 <meta charset="utf-8">
 <title>Contacto</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous">
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.jsp">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crear_capacitacion.jsp">Crear Capacitacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contacto.jsp">Contacto</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Sistema Asesoria Prevencion De Riesgo V1.0
+      </span>
+    </div>
+  </div>
+</nav>	
 	<div class="container col-lg-8 mt-4">
 		<h1>Contacto</h1>
 		<form action="Contacto" method="post">
@@ -20,7 +40,7 @@
 					class="form-control" id="nombre" name="nombre" required>
 			</div>
 			<div class="form-group">
-				<label for="email" class="form-label">Correo Electrònico</label> <input
+				<label for="email" class="form-label">Correo Electronico</label> <input
 					type="email" class="form-control" id="email" name="email" required>
 			</div>
 
@@ -29,12 +49,10 @@
 				<textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-success my-3">Enviar</button>
+			<button type="submit" class="btn btn-primary">Enviar</button>
 		</form>
-		<a href="index.jsp">Ir a Inicio</a> 
-		<a href="crear_capacitacion.jsp">Crear Capacitacion</a>
-	</div>
 
+	</div>
 
 
 	<script
